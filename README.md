@@ -1,4 +1,4 @@
-RobotSoul
+SmartBot
 =========
 
 My Master Thesis Project
