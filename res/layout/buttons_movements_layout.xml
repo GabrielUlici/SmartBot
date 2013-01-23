@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_hixs"
+    tools:context=".ButtonsSoccerActivity" >
+
+    <RelativeLayout
+        android:layout_width="358dp"
+        android:layout_height="563dp" >
+
+        <Button
+            android:id="@+id/btn_btnmove_turnleft"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn Left" />
+
+        <Button
+            android:id="@+id/btn_btnmove_forward"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text=" Forward  " />
+
+        <Button
+            android:id="@+id/btn_btnmove_turnright"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Turn Right" />
+
+        <Button
+            android:id="@+id/btn_btnmove_backward"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_btnmove_left"
+            android:layout_centerHorizontal="true"
+            android:text="Backward" />
+
+        <Button
+            android:id="@+id/btn_btnmove_right"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_btnmove_turnright"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_btnmove_backward"
+            android:text="Right" />
+
+        <Button
+            android:id="@+id/btn_btnmove_stand"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnmove_stopwalk"
+            android:layout_alignBottom="@+id/btn_btnmove_stopwalk"
+            android:layout_alignLeft="@+id/btn_btnmove_right"
+            android:layout_alignParentRight="true"
+            android:text="Stand" />
+
+        <Button
+            android:id="@+id/btn_btnmove_getupfacedown"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnmove_getupfaceup"
+            android:layout_alignBottom="@+id/btn_btnmove_getupfaceup"
+            android:layout_marginLeft="31dp"
+            android:layout_toRightOf="@+id/btn_btnmove_getupfaceup"
+            android:text="GetUp FaceDown" />
+
+        <Button
+            android:id="@+id/btn_btnmove_getupfaceup"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_btnmove_sit"
+            android:layout_below="@+id/btn_btnmove_stopwalk"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="30dp"
+            android:text="GetUp FaceUp" />
+
+        <Button
+            android:id="@+id/btn_btnmove_sit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnmove_stopwalk"
+            android:layout_alignBottom="@+id/btn_btnmove_stopwalk"
+            android:layout_alignRight="@+id/btn_btnmove_left"
+            android:text="Sit Down" />
+
+        <Button
+            android:id="@+id/btn_btnmove_left"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/btn_btnmove_turnleft"
+            android:layout_below="@+id/btn_btnmove_turnleft"
+            android:layout_marginTop="11dp"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/btn_btnmove_stopwalk"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_btnmove_backward"
+            android:layout_below="@+id/btn_btnmove_backward"
+            android:layout_marginTop="14dp"
+            android:text="Stop Walk" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActionBarCompat"
+    tools:context=".ActionBarActivity" >
+
+    <TextView
+        android:id="@+id/robot_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.03"
+        android:gravity="center"
+        android:text="Robot Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.08"
+        android:clickable="false"
+        android:paddingLeft="15dip"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/batteryView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.04"
+        android:src="@drawable/battery0" />
+
+</LinearLayout>

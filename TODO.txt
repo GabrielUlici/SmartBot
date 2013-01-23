@@ -1,0 +1,68 @@
+############ What still needs to be done. ############
+########## - not in any particular order  - ##########
+
+############ App features ###########
+
+- create an icon for the app.
+- fix the splash screen - the image is to big -
+- add actionbarsherlok in the app so it will be
+	compatible with older models.
+- organize better the classes - because it is a mess.
+- create landscape layouts and for small screens.
+- optimize for tablets.
+- make it more interactive like a dialog between the user and the robot
+- install the behaviors if they are not present.
+- use terminal if there is no connection to the robot
+	// long press on the robot name to display a menu.
+- send a command when i connect and sends me back an ok or not ok.
+- add a PullToRefresh to find new robots.
+- control more robots at the same time. multi-robot.
+- to work even on other robots not only the NAO robot
+- remember the last 2-5 robots that we connected to and display them as online or offline
+- when we cannot establish a connection with the robot - change the actionbar
+			 or the name of the robot background with error_robot_texture.png 
+
+############ App Commands ###########
+
+- What can you do
+- Nao telling a joke
+- dialog
+- set volume - command "What did you say" or " i cannot hear you" it will 
+				raise the volume and say "Can you hear me now". 
+			- command "raise your volume"
+- say word
+- you are impressive
+- good bye
+
+############ App Settings ###########
+
+- language.
+- theme.
+- wallpapers.
+
+############ App Speech ###########
+
+- Using ontology with speech.
+- add in the if to check even for the var OK because
+	when the while starts and the string is in two
+	if's then both are going to be executed.
+- stop with the button ??? Suggestion 
+- offline speech recognition
+
+############ App Buttons ###########
+
+- create icons for the tabs.
+- change the color of the tabs.
+- swipe between tabs.
+
+############ App JoyStick ###########
+
+- view of the nao cameras.
+- button to change from portrait to landscape.
+- even consider to make it for left handed persons.
+
+############ App Accelerometer ###########
+
+- button to change from portrait to landscape; as an idea we can add it in the actionbar
+		if it is the same on the older version of android < 4.0.
+

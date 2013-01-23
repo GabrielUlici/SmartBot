@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_hixs"
+    tools:context=".ButtonsBodyControlActivity" >
+
+    <RelativeLayout
+        android:layout_width="358dp"
+        android:layout_height="563dp" >
+
+        <TextView
+            android:id="@+id/textViewHeadControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Head Control"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_btnbody_center"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbody_left"
+            android:layout_alignBottom="@+id/btn_btnbody_left"
+            android:layout_centerHorizontal="true"
+            android:text="Center" />
+
+        <Button
+            android:id="@+id/btn_btnbody_right"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_btnbody_center"
+            android:layout_toRightOf="@+id/btn_btnbody_down"
+            android:text="Right" />
+
+        <Button
+            android:id="@+id/btn_btnbody_down"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbody_up"
+            android:layout_alignBottom="@+id/btn_btnbody_up"
+            android:layout_toRightOf="@+id/btn_btnbody_center"
+            android:text="  DOWN  " />
+
+        <Button
+            android:id="@+id/btn_btnbody_left"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewHeadControl"
+            android:layout_marginTop="11dp"
+            android:layout_toLeftOf="@+id/btn_btnbody_up"
+            android:text="Left" />
+
+        <Button
+            android:id="@+id/btn_btnbody_up"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_btnbody_center"
+            android:layout_marginTop="11dp"
+            android:layout_toLeftOf="@+id/btn_btnbody_center"
+            android:text="      UP      " />
+
+        <TextView
+            android:id="@+id/textViewHandsControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_btnbody_up"
+            android:layout_marginTop="16dp"
+            android:text="Hands Control"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_btnbody_leftup"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewHandsControl"
+            android:layout_marginTop="12dp"
+            android:text="Left Up" />
+
+        <Button
+            android:id="@+id/btn_btnbody_rightdown"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_btnbody_rightup"
+            android:text="Right Down" />
+
+        <Button
+            android:id="@+id/btn_btnbody_rightup"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbody_leftdown"
+            android:layout_alignBottom="@+id/btn_btnbody_leftdown"
+            android:layout_toLeftOf="@+id/btn_btnbody_rightdown"
+            android:text="Right Up" />
+
+        <Button
+            android:id="@+id/btn_btnbody_leftdown"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbody_leftup"
+            android:layout_alignBottom="@+id/btn_btnbody_leftup"
+            android:layout_toRightOf="@+id/btn_btnbody_leftup"
+            android:text="Left Down" />
+
+        <Button
+            android:id="@+id/btn_btnbody_handsdown"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbody_handsup"
+            android:layout_alignBottom="@+id/btn_btnbody_handsup"
+            android:layout_alignLeft="@+id/btn_btnbody_rightup"
+            android:text="Hands Down" />
+
+        <Button
+            android:id="@+id/btn_btnbody_handsup"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn_btnbody_leftdown"
+            android:layout_centerVertical="true"
+            android:text="  Hands Up  " />
+
+    </RelativeLayout>
+
+</LinearLayout>
