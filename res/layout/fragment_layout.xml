@@ -1,0 +1,31 @@
+<com.nightideaslab.smartbot.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1" >
+
+    <Button
+        android:id="@+id/btn_dash_speech"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_speech"
+        android:text="@string/dashboard_speech" />
+    
+    <Button
+        android:id="@+id/btn_dash_buttons"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_buttons"
+        android:text="@string/dashboard_buttons" />
+    
+    <Button
+        android:id="@+id/btn_dash_joystick"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_joystick"
+        android:text="@string/dashboard_joystick" />
+	
+    <Button
+        android:id="@+id/btn_dash_accelerometer"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_accelerometer"
+        android:text="@string/dashboard_accelerometer" />
+    
+</com.nightideaslab.smartbot.DashboardLayout>

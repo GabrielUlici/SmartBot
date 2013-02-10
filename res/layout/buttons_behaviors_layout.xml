@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_hixs"
+    tools:context=".ButtonsBehaviorsActivity" >
+
+    <RelativeLayout
+        android:layout_width="358dp"
+        android:layout_height="563dp" >
+
+        <TextView
+            android:id="@+id/textViewSpecialAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special Actions"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_starwarsstory"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbeha_3musketeers"
+            android:layout_alignBottom="@+id/btn_btnbeha_3musketeers"
+            android:layout_toRightOf="@+id/btn_btnbeha_hello"
+            android:text="Star Wars Story" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_vangelis"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_btnbeha_thriller"
+            android:text="Vangelis" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_taichi"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbeha_caravan"
+            android:layout_alignBottom="@+id/btn_btnbeha_caravan"
+            android:layout_alignRight="@+id/btn_btnbeha_3musketeers"
+            android:text="Taichi" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_thriller"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbeha_taichi"
+            android:layout_alignBottom="@+id/btn_btnbeha_taichi"
+            android:layout_marginRight="21dp"
+            android:layout_toLeftOf="@+id/btn_btnbeha_vangelis"
+            android:text="Thriller" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_eyesanim"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbeha_hello"
+            android:layout_alignBottom="@+id/btn_btnbeha_hello"
+            android:layout_alignParentRight="true"
+            android:text="Eyes Anim." />
+
+        <Button
+            android:id="@+id/btn_btnbeha_goandrest"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_btnbeha_followme"
+            android:layout_alignBottom="@+id/btn_btnbeha_followme"
+            android:layout_toRightOf="@+id/btn_btnbeha_hello"
+            android:text="Go and Rest" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_caravan"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewDances"
+            android:layout_below="@+id/textViewDances"
+            android:layout_marginTop="16dp"
+            android:text="Caravan" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_followme"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_btnbeha_presentation"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@+id/btn_btnbeha_hello"
+            android:text="Follow Me" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_3musketeers"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewStorys"
+            android:layout_below="@+id/textViewStorys"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:text="The 3 musketeers" />
+
+        <TextView
+            android:id="@+id/textViewDances"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_btnbeha_3musketeers"
+            android:layout_marginTop="18dp"
+            android:text="Dances"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewStorys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_btnbeha_followme"
+            android:layout_marginTop="13dp"
+            android:text="Storys"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_stopbehavior"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_btnbeha_taichi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="Stop Behavior" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_presentation"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewSpecialAction"
+            android:text="Presentation" />
+
+        <Button
+            android:id="@+id/btn_btnbeha_hello"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_btnbeha_followme"
+            android:layout_centerHorizontal="true"
+            android:text="  Hello  " />
+
+    </RelativeLayout>
+
+</LinearLayout>

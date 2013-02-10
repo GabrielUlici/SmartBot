@@ -359,11 +359,11 @@ public class SearchActivity extends Activity
 				String port = "30000";
 				// push off fake result to try login
 				// this will start the pairing process if needed
-				//Intent shell = new Intent(SearchActivity.this, DashboardMainActivity.class);
-				//shell.putExtra("EXTRA_ADDRESS", address);
-				//shell.putExtra("EXTRA_ROBOT", robot);
-				//shell.putExtra("EXTRA_PORT", port);
-				//startActivity(shell);
+				Intent shell = new Intent(SearchActivity.this, DashboardMainActivity.class);
+				shell.putExtra("EXTRA_ADDRESS", address);
+				shell.putExtra("EXTRA_ROBOT", robot);
+				shell.putExtra("EXTRA_PORT", port);
+				startActivity(shell);
 				// onActivityResult(-1, Activity.RESULT_OK, shell);
 
 				// Intent i = new Intent(getApplicationContext(), Das.class);
@@ -520,8 +520,8 @@ public class SearchActivity extends Activity
 									// port.getText().toString());
 									// onActivityResult(-1, Activity.RESULT_OK,
 									// shell);
-								//	Intent shell = new Intent(SearchActivity.this, DashboardMainActivity.class);
-								//	startActivity(shell);
+									Intent shell = new Intent(SearchActivity.this, DashboardMainActivity.class);
+									startActivity(shell);
 								}
 							})
 					.setNegativeButton(R.string.search_manual_neg,
@@ -533,8 +533,8 @@ public class SearchActivity extends Activity
 			return true;
 
 		case R.id.menu_search_settings:
-		//	Intent shell = new Intent(SearchActivity.this, Preferences.class);
-		//	startActivity(shell);
+			Intent shell = new Intent(SearchActivity.this, Preferences.class);
+			startActivity(shell);
 			return true;
 
 		case R.id.menu_search_quit:
