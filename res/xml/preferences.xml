@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.jakewharton.tronwallpaper"
+	android:title="@string/title"
+	android:key="SmartBot_Settings">
+	
+	<PreferenceCategory
+		android:title="@string/settings_header">
+		
+	                
+        	<CheckBoxPreference
+            	    android:key="defaultport"
+                	android:title="@string/title_do_not_use_default_port" 
+                	android:summary="@string/summary_do_not_use_default_port" />
+            		
+        	<EditTextPreference
+        	    	android:key="otherport"
+            	    android:layout="?android:attr/preferenceLayoutChild"
+            	    android:defaultValue="@string/default_value_port"
+                	android:title="@string/title_other_port"
+                	android:summary="@string/summary_other_port"
+                	android:dependency="defaultport"
+                	android:dialogTitle="@string/dialog_title_other_port"/>	    
+	    
+		<!-- DISPLAY AND GAME -->
+	<!--	<PreferenceScreen
+			android:key="@string/settings_display_key"
+			android:title="@string/settings_display"
+			android:summary="@string/settings_display_summary">
+			<CheckBoxPreference
+				android:key="@string/settings_game_usercontrol_key"
+				android:title="@string/settings_game_usercontrol"
+				android:summary="@string/settings_game_usercontrol_summary"
+				/>
+			
+			<CheckBoxPreference
+				android:key="@string/settings_display_showwalls_key"
+				android:title="@string/settings_display_showwalls"
+				android:summary="@string/settings_display_showwalls_summary"
+				/>
+			<PreferenceCategory
+				android:title="@string/settings_display_layout">
+				
+				<PreferenceScreen
+					android:key="@string/settings_display_padding_key"
+					android:title="@string/settings_display_padding"
+					android:summary="@string/settings_display_padding_summary">
+					
+				</PreferenceScreen>
+			</PreferenceCategory>
+			
+			<PreferenceCategory
+				android:key="@string/settings_reset_key"
+				android:title="@string/settings_reset">
+				<Preference
+					android:key="@string/settings_display_reset_key"
+					android:title="@string/settings_display_reset"
+					android:summary="@string/settings_display_reset_summary"/>
+			</PreferenceCategory>
+		</PreferenceScreen> -->
+		
+		
+		
+		<!-- COLORS AND BACKGROUND -->
+	<!--	<PreferenceScreen
+			android:key="@string/settings_color_key"
+			android:title="@string/settings_color"
+			android:summary="@string/settings_color_summary">
+			<PreferenceCategory
+				android:title="@string/settings_color_background_header">
+				
+				<Preference
+					android:key="@string/settings_color_bgimage_key"
+					android:title="@string/settings_color_bgimage"
+					android:summary="@string/settings_color_bgimage_summary"/>
+				
+				<Preference
+					android:key="@string/settings_color_bgimageclear_key"
+					android:title="@string/settings_color_bgimageclear"
+					android:summary="@string/settings_color_bgimageclear_summary"/>
+			</PreferenceCategory>
+			
+			<PreferenceCategory
+				android:title="@string/settings_color_players_header">
+				
+			</PreferenceCategory>
+			
+			<PreferenceCategory
+				android:key="@string/settings_reset_key"
+				android:title="@string/settings_reset">
+				<Preference
+					android:key="@string/settings_color_reset_key"
+					android:title="@string/settings_color_reset"
+					android:summary="@string/settings_color_reset_summary"/>
+			</PreferenceCategory>
+		</PreferenceScreen>  -->
+	</PreferenceCategory>
+	
+	
+	
+	<PreferenceCategory
+		android:title="@string/information_header">
+		<PreferenceScreen
+			android:key="@string/about_key"
+			android:title="@string/about"
+			android:summary="@string/about_summary">
+			<Preference
+				android:key="@string/about_header_key"
+				android:title="@string/app_name"
+				android:summary="@string/about_header_summary"
+				style="?android:preferenceInformationStyle"/>
+			<PreferenceCategory
+				android:title="@string/about_contents">
+			<!-- 	<Preference
+					android:key="@string/instructions_key"
+					android:title="@string/instructions"
+					android:summary="@string/instructions_summary"/>  -->
+				<Preference
+					android:key="@string/changelog_key"
+					android:title="@string/changelog"
+					android:summary="@string/changelog_summary"/>
+				<Preference
+					android:key="@string/legal_key"
+					android:title="@string/legal"
+					android:summary="@string/legal_summary"/>
+				<Preference
+					android:key="@string/todo_key"
+					android:title="@string/todo"
+					android:summary="@string/todo_summary"/>
+				<Preference	
+					android:key="@string/app_website_key"
+					android:title="@string/app_website"
+					android:summary="@string/app_website_summary" />
+				
+				<Preference
+					android:key="@string/githubapp_key"
+					android:title="@string/githubapp"
+					android:summary="@string/githubapp_summary"/>
+				
+			</PreferenceCategory>
+		<!--  	<PreferenceCategory
+				android:title="@string/about_aroundtheweb_header">
+			  	<Preference
+					android:key="@string/github_key"
+					android:title="@string/github"
+					android:summary="@string/github_summary"/>
+			</PreferenceCategory> -->
+		</PreferenceScreen>
+		<PreferenceScreen
+			android:key="@string/information_author_key"
+			android:title="@string/information_author"
+			android:summary="@string/author">
+			<Preference
+				android:key="@string/information_author_key"
+				android:title="@string/author"
+				style="?android:preferenceInformationStyle"/>
+			<PreferenceCategory
+				android:title="@string/information_contact">
+				<Preference
+					android:key="@string/information_contact_email_key"
+					android:title="@string/information_contact_email"
+					android:summary="@string/information_contact_email_summary" />
+				<Preference	
+					android:key="@string/information_contact_website_key"
+					android:title="@string/information_contact_website"
+					android:summary="@string/information_contact_website_summary" />
+				<Preference
+					android:key="@string/information_contact_twitter_key"
+					android:title="@string/information_contact_twitter"
+					android:summary="@string/information_contact_twitter_summary" />
+				<Preference
+					android:key="@string/githubauthor_key"
+					android:title="@string/githubauthor"
+					android:summary="@string/githubauthor_summary"/>		
+			</PreferenceCategory>
+		<!-- 	<PreferenceCategory
+				android:title="@string/information_market">
+				<Preference
+					android:key="@string/information_market_view_key"
+					android:title="@string/information_market_view"
+					android:summary="@string/information_market_view_summary"/>
+			</PreferenceCategory>  -->
+		</PreferenceScreen>
+		<Preference
+			android:key="@string/information_version_key"
+			android:title="@string/information_version"
+			android:summary="@string/version_name"
+			style="?android:preferenceInformationStyle"/>
+	</PreferenceCategory>
+</PreferenceScreen>

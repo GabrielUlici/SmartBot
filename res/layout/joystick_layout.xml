@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_hixs"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.53" >
+
+        <com.zerokol.views.JoystickView
+            android:id="@+id/joystickViewL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+
+        <com.zerokol.views.JoystickView
+            android:id="@+id/joystickViewR"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_joy_leftkick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="Left Kick" />
+
+        <Button
+            android:id="@+id/btn_joy_rightkick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="Right Kick" />
+
+        <Button
+            android:id="@+id/btn_joy_rightbackkick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_joy_rightkick"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="Right Back Kick" />
+
+        <Button
+            android:id="@+id/btn_joy_leftbackkick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_joy_leftkick"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="Left Back Kick" />
+
+        <Button
+            android:id="@+id/btn_joy_sit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/btn_joy_leftbackkick"
+            android:text="Sit" />
+
+        <Button
+            android:id="@+id/btn_joy_stand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_joy_sit"
+            android:text="Stand" />
+
+    </RelativeLayout>
+
+</LinearLayout>

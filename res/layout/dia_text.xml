@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="250dip"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="10dip"
+	>
+
+	<EditText
+	    android:id="@android:id/text1"
+	    android:layout_width="250dip"
+	    android:layout_height="wrap_content"
+	    android:hint="@string/dia_ipaddress"
+	    android:inputType="phone"
+	    android:singleLine="true" />
+			
+	<EditText
+		android:id="@android:id/text2"
+		android:layout_width="250dip"
+		android:singleLine="true"
+		android:inputType="phone"
+		android:layout_height="wrap_content"
+		android:hint="@string/dia_code"
+		/>
+
+</LinearLayout>
+

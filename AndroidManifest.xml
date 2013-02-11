@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nightideaslab.smartbot"
+    android:versionCode="1"
+    android:versionName="@string/version_name" >
+
+    <uses-sdk
+        android:minSdkVersion="11" android:targetSdkVersion="17"/>
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+  	<uses-feature android:name="android.hardware.touchscreen" />
+  	
+  	<supports-screens 
+        android:xlargeScreens="false"
+        android:anyDensity="true"
+        android:resizeable="true"
+        android:largeScreens="true"
+        android:normalScreens="true" android:smallScreens="false"/>
+  	
+  	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <!-- SplashScreen Activity -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo"
+        android:hardwareAccelerated="true" >
+        
+        <activity
+            android:name="com.nightideaslab.smartbot.SmartBot"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Search Activity -->
+        <activity android:name="com.nightideaslab.smartbot.SearchActivity" ></activity>
+        
+        <!-- Dashboard Activity -->
+        <activity android:name="com.nightideaslab.smartbot.DashboardMainActivity" ></activity> 
+        
+       	<activity android:name="com.nightideaslab.smartbot.DashboardActivity" ></activity> 
+        
+        <!-- Speech Activity -->
+        <activity android:name="com.nightideaslab.smartbot.SpeechActivity" ></activity>
+
+        <!-- Buttons Activity -->
+        <activity android:name="com.nightideaslab.smartbot.ButtonsActivity" ></activity>
+        
+        <activity android:name="com.nightideaslab.smartbot.ButtonsSoccerActivity" />
+        
+        <activity android:name="com.nightideaslab.smartbot.ButtonsBodyControlActivity" />
+        
+        <activity android:name="com.nightideaslab.smartbot.ButtonsMovementsActivity" />
+        
+        <activity android:name="com.nightideaslab.smartbot.ButtonsBehaviorsActivity" />
+
+        <!-- Joystick Activity -->
+        <activity android:name="com.nightideaslab.smartbot.JoystickActivity" android:screenOrientation="landscape"></activity>
+
+        <!-- Accelerometer Activity -->
+        <activity android:name="com.nightideaslab.smartbot.AccelerometerMainActivity" android:screenOrientation="portrait"></activity>
+        
+        <activity android:name="com.nightideaslab.smartbot.AccelerometerActivity" android:screenOrientation="portrait"></activity>
+
+        <!-- Terminal Activity -->
+        <activity android:name="com.nightideaslab.smartbot.TerminalActivity" ></activity>
+        
+        <!-- Behaviors Activity -->
+        <activity android:name="com.nightideaslab.smartbot.BehaviorsActivity" ></activity>
+        
+        <activity
+            android:label="@string/title"
+            android:name="com.nightideaslab.smartbot.Preferences"
+            ></activity>
+        <activity
+        	android:label="@string/title"
+            android:name="com.nightideaslab.smartbot.About"
+            android:exported="false" ></activity>
+
+     
+ 
+    </application>
+
+</manifest>
