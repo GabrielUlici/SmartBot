@@ -4,12 +4,9 @@ import com.nightideaslab.smartbot.R;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.DialogInterface.OnClickListener;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -18,7 +15,6 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.preference.Preference.OnPreferenceClickListener;
-import android.provider.MediaStore;
 
 import android.widget.Toast;
 
@@ -48,7 +44,7 @@ public class Preferences extends PreferenceActivity implements SharedPreferences
 	/**
 	 * Filename of the instructions.
 	 */
-	private static final String FILENAME_INSTRUCTIONS = "instructions.html";
+//	private static final String FILENAME_INSTRUCTIONS = "instructions.html";
 	
 	/**
 	 * Filename of the to do list.
@@ -75,7 +71,7 @@ public class Preferences extends PreferenceActivity implements SharedPreferences
         manager.setSharedPreferencesName(Preferences.SHARED_NAME);
         this.addPreferencesFromResource(R.xml.preferences);
         
-        final SharedPreferences preferences = manager.getSharedPreferences();
+        //final SharedPreferences preferences = manager.getSharedPreferences();
         final Resources resources = this.getResources();
         
 //        //reset display and game
@@ -258,12 +254,12 @@ public class Preferences extends PreferenceActivity implements SharedPreferences
     /**
      * Open instructions.
      */
-    private void viewInstructions() {
-		final Intent intent = new Intent(this, About.class);
-		intent.putExtra(About.EXTRA_FILENAME, Preferences.FILENAME_INSTRUCTIONS);
-		intent.putExtra(About.EXTRA_TITLE, this.getResources().getString(R.string.instructions_title));
-		this.startActivity(intent);
-    }
+//    private void viewInstructions() {
+//		final Intent intent = new Intent(this, About.class);
+//		intent.putExtra(About.EXTRA_FILENAME, Preferences.FILENAME_INSTRUCTIONS);
+//		intent.putExtra(About.EXTRA_TITLE, this.getResources().getString(R.string.instructions_title));
+//		this.startActivity(intent);
+//    }
     
     /**
      * Open legal
@@ -407,72 +403,72 @@ public class Preferences extends PreferenceActivity implements SharedPreferences
     /**
      * Launch an intent to view other market applications.
      */
-    private void infoMarket()
-    {
-        final Resources resources = this.getResources();
-    	final Intent intent = new Intent(Intent.ACTION_VIEW);
-		intent.setData(Uri.parse(resources.getString(R.string.information_market_view_data)));
-		
-		this.startActivity(intent);
-    }
-    
-    /**
-     * Reset display preferences to their defaults.
-     */
-    private void loadDisplayAndGameDefaults() {
-        final Resources resources = this.getResources();
-	    @SuppressWarnings ( "deprecation" )
-        final SharedPreferences.Editor editor = Preferences.this.getPreferenceManager().getSharedPreferences().edit();
-
-		//user controllable
-		editor.remove(resources.getString(R.string.settings_game_usercontrol_key));
-		//fps
-		editor.remove(resources.getString(R.string.settings_display_fps_key));
-		//show walls
-		editor.remove(resources.getString(R.string.settings_display_showwalls_key));
-		//icon rows
-		editor.remove(resources.getString(R.string.settings_display_iconrows_key));
-		//icon cols
-		editor.remove(resources.getString(R.string.settings_display_iconcols_key));
-		//icon row spacing
-		editor.remove(resources.getString(R.string.settings_display_rowspacing_key));
-		//icon col spacing
-		editor.remove(resources.getString(R.string.settings_display_colspacing_key));
-		//widget locations
-		editor.remove(resources.getString(R.string.settings_display_widgetlocations_key));
-		//padding top
-		editor.remove(resources.getString(R.string.settings_display_padding_top_key));
-		//padding bottom
-		editor.remove(resources.getString(R.string.settings_display_padding_bottom_key));
-		//padding left
-		editor.remove(resources.getString(R.string.settings_display_padding_left_key));
-		//padding right
-		editor.remove(resources.getString(R.string.settings_display_padding_right_key));
-	
-		editor.commit();
-    }
+//    private void infoMarket()
+//    {
+//        final Resources resources = this.getResources();
+//    	final Intent intent = new Intent(Intent.ACTION_VIEW);
+//		intent.setData(Uri.parse(resources.getString(R.string.information_market_view_data)));
+//		
+//		this.startActivity(intent);
+//    }
+//    
+//    /**
+//     * Reset display preferences to their defaults.
+//     */
+//    private void loadDisplayAndGameDefaults() {
+//        final Resources resources = this.getResources();
+//	    @SuppressWarnings ( "deprecation" )
+//        final SharedPreferences.Editor editor = Preferences.this.getPreferenceManager().getSharedPreferences().edit();
+//
+//		//user controllable
+//		editor.remove(resources.getString(R.string.settings_game_usercontrol_key));
+//		//fps
+//		editor.remove(resources.getString(R.string.settings_display_fps_key));
+//		//show walls
+//		editor.remove(resources.getString(R.string.settings_display_showwalls_key));
+//		//icon rows
+//		editor.remove(resources.getString(R.string.settings_display_iconrows_key));
+//		//icon cols
+//		editor.remove(resources.getString(R.string.settings_display_iconcols_key));
+//		//icon row spacing
+//		editor.remove(resources.getString(R.string.settings_display_rowspacing_key));
+//		//icon col spacing
+//		editor.remove(resources.getString(R.string.settings_display_colspacing_key));
+//		//widget locations
+//		editor.remove(resources.getString(R.string.settings_display_widgetlocations_key));
+//		//padding top
+//		editor.remove(resources.getString(R.string.settings_display_padding_top_key));
+//		//padding bottom
+//		editor.remove(resources.getString(R.string.settings_display_padding_bottom_key));
+//		//padding left
+//		editor.remove(resources.getString(R.string.settings_display_padding_left_key));
+//		//padding right
+//		editor.remove(resources.getString(R.string.settings_display_padding_right_key));
+//	
+//		editor.commit();
+//    }
     
     /**
      * Reset color preferences to their defaults.
      */
-    @SuppressWarnings ( "deprecation" )
-    private void loadColorDefaults() {
-        final Resources resources = this.getResources();
-		final SharedPreferences.Editor editor = Preferences.this.getPreferenceManager().getSharedPreferences().edit();
-
-		//background
-		editor.remove(resources.getString(R.string.settings_color_background_key));
-		//walls
-		editor.remove(resources.getString(R.string.settings_color_walls_key));
-		//background image
-		editor.remove(resources.getString(R.string.settings_color_bgimage_key));
-		//background opacity
-		editor.remove(resources.getString(R.string.settings_color_bgopacity_key));
-		//player
-		editor.remove(resources.getString(R.string.settings_color_player_key));
-		//opponent
-		editor.remove(resources.getString(R.string.settings_color_opponent_key));
-		
-		editor.commit();
-    }
+//    @SuppressWarnings ( "deprecation" )
+//    private void loadColorDefaults() {
+//        final Resources resources = this.getResources();
+//		final SharedPreferences.Editor editor = Preferences.this.getPreferenceManager().getSharedPreferences().edit();
+//
+//		//background
+//		editor.remove(resources.getString(R.string.settings_color_background_key));
+//		//walls
+//		editor.remove(resources.getString(R.string.settings_color_walls_key));
+//		//background image
+//		editor.remove(resources.getString(R.string.settings_color_bgimage_key));
+//		//background opacity
+//		editor.remove(resources.getString(R.string.settings_color_bgopacity_key));
+//		//player
+//		editor.remove(resources.getString(R.string.settings_color_player_key));
+//		//opponent
+//		editor.remove(resources.getString(R.string.settings_color_opponent_key));
+//		
+//		editor.commit();
+//    }
 }

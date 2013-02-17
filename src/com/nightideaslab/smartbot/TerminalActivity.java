@@ -1,6 +1,6 @@
 package com.nightideaslab.smartbot;
 
-import com.nightideaslab.util.Globals;
+//import com.nightideaslab.util.Globals;
 import com.nightideaslab.util.TCPClient;
 
 import android.app.ActionBar;
@@ -32,7 +32,7 @@ public class TerminalActivity extends Activity
 
 	boolean _bbCanSend;											/** TRUE = robot connect, can send data */
 	private TCPClient _roboCOM;									/** Connection Thread */
-	private Globals global;
+//	private Globals global;
 
 	public static String address, robot, port;
 
@@ -54,7 +54,7 @@ public class TerminalActivity extends Activity
 
 		setCOMStatus (null,false);
 
-		global = new Globals();
+//		global = new Globals();
 		MsgQueue = new android.os.Handler (this);
 
 		last_sent_ms=0;

@@ -15,7 +15,7 @@
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sit Down" />
+                android:text="@string/acc_sit" />
 
             <Button
                 android:id="@+id/btn_acc_stop"
@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                android:text="Stop" />
+                android:text="@string/acc_stop" />
 
             <Button
                 android:id="@+id/btn_acc_stand"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/btn_acc_sit"
-                android:text="Stand" />
+                android:text="@string/acc_stand" />
 
             <Button
                 android:id="@+id/btn_acc_start"
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@+id/btn_acc_stop"
-                android:text="Start" />
+                android:text="@string/acc_start" />
 
         </RelativeLayout>
 

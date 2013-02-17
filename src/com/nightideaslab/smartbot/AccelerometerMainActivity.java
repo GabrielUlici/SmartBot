@@ -1,13 +1,13 @@
 package com.nightideaslab.smartbot;
 
 import android.app.ActionBar;
-import android.content.Intent;
+//import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
+//import android.view.Menu;
+//import android.view.MenuItem;
+//import android.widget.Toast;
 
 public class AccelerometerMainActivity extends FragmentActivity{
 

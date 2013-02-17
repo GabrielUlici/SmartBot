@@ -1,10 +1,5 @@
 package com.nightideaslab.smartbot;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-
 import com.nightideaslab.util.Globals;
 import com.nightideaslab.util.TCPClient;
 import com.zerokol.views.JoystickView;

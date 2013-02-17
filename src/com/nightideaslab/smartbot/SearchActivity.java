@@ -18,10 +18,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Shader;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
@@ -497,10 +493,10 @@ public class SearchActivity extends Activity
 			LayoutInflater inflater = (LayoutInflater) SearchActivity.this
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			final View view = inflater.inflate(R.layout.dia_text, null);
-			final TextView address = (TextView) view
-					.findViewById(android.R.id.text1);
-			final TextView port = (TextView) view
-					.findViewById(android.R.id.text2);
+	//		final TextView address = (TextView) view
+	//				.findViewById(android.R.id.text1);
+	//		final TextView port = (TextView) view
+	//				.findViewById(android.R.id.text2);
 			// port.setText("9876");
 
 			new AlertDialog.Builder(SearchActivity.this)

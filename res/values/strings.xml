@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- ============================== -->
+    <!--  	    Main App strings        -->
+    <!-- ============================== -->
+        
     <string name="app_name">SmartBot</string>
     <string name="author">Gabriel Ulici</string>
 	<string name="description">Teleoperate the robot NAO over wifi.</string>
     <string name="version_name">0.9.8b</string>
     <string name="version_code_key">version</string>
+    
+    
+    <!-- ============================== -->
+    <!--  		 Other string		    -->
+    <!-- ============================== -->
+    
+    <string name="naoPicture">Nao Picture</string>
+    <string name="icon_icon">Icon</string>
+    <string name="footer_string">http://gabrielulici.github.com/SmartBot</string>
+    <string name="actionbar_robotname">Robot Name</string>
+    <string name="actionbar_image">image</string>
+    <string name="actionbar_battery">battery</string>
+    
+    
+    <!-- ============================== -->
+    <!--  		Seach Layout string     -->
+    <!-- ============================== -->
+    
     <string name="item_network_title">Searching network for robots…</string>
     <string name="item_network_caption">Turn on the robot and make sure you\'re on the same Wifi network. If
         having trouble, try cycling your Wifi, opening port 30000 in your firewall, or tapping Menu and Refresh.</string>
@@ -22,20 +44,9 @@
     <string name="no_network_title">No wifi connection</string>
     <string name="no_network">Currently not connected to a wifi network. Please check your wifi settings.</string>
     
-    <!-- ============================== -->
-    <!--  app/menu examples strings     -->
-    <!-- ============================== -->
-    
-    <string name="dots">...........</string>
-    <string name="dots2">--.--</string>
-    <string name="robot_accX">AccX  : </string>
-    <string name="robot_accY">AccY  : </string>
-    <string name="robot_accZ">AccZ  : </string>
-    <string name="robot_roll">Roll  : </string>
-    <string name="robot_pitch">Pitch  : </string>
     
     <!-- ============================== -->
-    <!--  app/menu examples strings     -->
+    <!--  Dashboard app/menu strings    -->
     <!-- ============================== -->
     
     <string name="dashboard_menu_disconnect">Disconnect</string>
@@ -50,7 +61,49 @@
     
     
     <!-- ============================== -->
-    <!--  		Preference strings      -->
+    <!--    Speech app/menu strings     -->
+    <!-- ============================== -->
+    
+    <string name="speech_speak">Speak!</string>
+    
+    
+    <!-- ============================== -->
+    <!--    Buttons app/menu strings    -->
+    <!-- ============================== -->
+    
+    <string name="buttons_menu_disconnect">Disconnect</string>
+    
+    
+    <!-- ============================== -->
+    <!--   JoyStick app/menu strings    -->
+    <!-- ============================== -->
+    
+    <string name="joystick_menu_disconnect">Disconnect</string>
+    
+    
+    <!-- ============================== -->
+    <!-- Accelerometer app/menu string  -->
+    <!-- ============================== -->
+    
+    <!--  Debug string    -->
+    <string name="acc_acc_data">Accelerometer Data :</string>
+    <string name="dots">...........</string>
+    <string name="dots2">--.--</string>
+    <string name="robot_accX">AccX  : </string>
+    <string name="robot_accY">AccY  : </string>
+    <string name="robot_accZ">AccZ  : </string>
+    <string name="robot_roll">Roll  : </string>
+    <string name="robot_pitch">Pitch  : </string>
+    
+    <!--  Accelerometer Buttons string    -->
+    <string name="acc_sit">Sit Down</string>
+    <string name="acc_stand">Stand</string>
+    <string name="acc_start">Start</string>
+    <string name="acc_stop">Stop</string>
+    
+    
+    <!-- ============================== -->
+    <!--  	   Preference strings       -->
     <!-- ============================== -->
 
     <string name="title">SmartBot Preferences</string>

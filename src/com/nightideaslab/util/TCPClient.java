@@ -15,14 +15,14 @@ import java.net.URLConnection;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.concurrent.ArrayBlockingQueue;
-import java.net.URL;
-import java.net.URLConnection;
+//import java.net.URL;
+//import java.net.URLConnection;
 import android.os.Handler;
 import android.os.Message;
 import android.os.StrictMode;
 
 import android.net.ConnectivityManager;
-import android.os.Message;
+//import android.os.Message;
 import android.util.Log;
 
 /**
