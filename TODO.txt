@@ -3,12 +3,15 @@
 
 ############ App features ###########
 
+- for the accelerometer create a ball with Axes
+- add a icon when the wi-fi is turn off so the user can go directly to it to turn it on.
+- create landscape layouts and for small screens.
+- ping google speech server if it responds than ok if not no speech recognizer
+- Try to recreate the layout of the phone app in android - for the dashboard
 - create an icon for the app.
-- fix the splash screen - the image is to big -
 - add actionbarsherlok in the app so it will be
 	compatible with older models.
 - organize better the classes - because it is a mess.
-- create landscape layouts and for small screens.
 - optimize for tablets.
 - make it more interactive like a dialog between the user and the robot
 - install the behaviors if they are not present.
@@ -65,4 +68,5 @@
 
 - button to change from portrait to landscape; as an idea we can add it in the actionbar
 		if it is the same on the older version of android < 4.0.
+- debug mode - to hide the drawing and display the numbers 
 
