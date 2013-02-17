@@ -16,7 +16,7 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Turn Left" />
+            android:text="@string/buttons_movements_turn_left" />
 
         <Button
             android:id="@+id/btn_btnmove_forward"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text=" Forward  " />
+            android:text="@string/buttons_movements_forward" />
 
         <Button
             android:id="@+id/btn_btnmove_turnright"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:text="Turn Right" />
+            android:text="@string/buttons_movements_turn_right" />
 
         <Button
             android:id="@+id/btn_btnmove_backward"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/btn_btnmove_left"
             android:layout_centerHorizontal="true"
-            android:text="Backward" />
+            android:text="@string/buttons_movements_backward" />
 
         <Button
             android:id="@+id/btn_btnmove_right"
@@ -53,7 +53,7 @@
             android:layout_alignLeft="@+id/btn_btnmove_turnright"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/btn_btnmove_backward"
-            android:text="Right" />
+            android:text="@string/buttons_movements_right" />
 
         <Button
             android:id="@+id/btn_btnmove_stand"
@@ -64,7 +64,7 @@
             android:layout_alignBottom="@+id/btn_btnmove_stopwalk"
             android:layout_alignLeft="@+id/btn_btnmove_right"
             android:layout_alignParentRight="true"
-            android:text="Stand" />
+            android:text="@string/buttons_movements_stand" />
 
         <Button
             android:id="@+id/btn_btnmove_getupfacedown"
@@ -75,7 +75,7 @@
             android:layout_alignBottom="@+id/btn_btnmove_getupfaceup"
             android:layout_marginLeft="31dp"
             android:layout_toRightOf="@+id/btn_btnmove_getupfaceup"
-            android:text="GetUp FaceDown" />
+            android:text="@string/buttons_movements_getup_facedown" />
 
         <Button
             android:id="@+id/btn_btnmove_getupfaceup"
@@ -86,7 +86,7 @@
             android:layout_below="@+id/btn_btnmove_stopwalk"
             android:layout_marginLeft="44dp"
             android:layout_marginTop="30dp"
-            android:text="GetUp FaceUp" />
+            android:text="@string/buttons_movements_getup_faceup" />
 
         <Button
             android:id="@+id/btn_btnmove_sit"
@@ -96,7 +96,7 @@
             android:layout_alignBaseline="@+id/btn_btnmove_stopwalk"
             android:layout_alignBottom="@+id/btn_btnmove_stopwalk"
             android:layout_alignRight="@+id/btn_btnmove_left"
-            android:text="Sit Down" />
+            android:text="@string/buttons_movements_sit" />
 
         <Button
             android:id="@+id/btn_btnmove_left"
@@ -107,7 +107,7 @@
             android:layout_alignRight="@+id/btn_btnmove_turnleft"
             android:layout_below="@+id/btn_btnmove_turnleft"
             android:layout_marginTop="11dp"
-            android:text="Left" />
+            android:text="@string/buttons_movements_left" />
 
         <Button
             android:id="@+id/btn_btnmove_stopwalk"
@@ -117,7 +117,7 @@
             android:layout_alignLeft="@+id/btn_btnmove_backward"
             android:layout_below="@+id/btn_btnmove_backward"
             android:layout_marginTop="14dp"
-            android:text="Stop Walk" />
+            android:text="@string/buttons_movements_stop_walk" />
 
     </RelativeLayout>
 

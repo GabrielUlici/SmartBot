@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="6dip"
             android:paddingRight="6dip"
-            android:text="Left Kick" />
+            android:text="@string/joystick_left_kick" />
 
         <Button
             android:id="@+id/btn_joy_rightkick"
@@ -45,7 +45,7 @@
             android:layout_alignParentTop="true"
             android:paddingLeft="6dip"
             android:paddingRight="6dip"
-            android:text="Right Kick" />
+            android:text="@string/joystick_right_kick" />
 
         <Button
             android:id="@+id/btn_joy_rightbackkick"
@@ -55,7 +55,7 @@
             android:layout_toLeftOf="@+id/btn_joy_rightkick"
             android:paddingLeft="6dip"
             android:paddingRight="6dip"
-            android:text="Right Back Kick" />
+            android:text="@string/joystick_right_back_kick" />
 
         <Button
             android:id="@+id/btn_joy_leftbackkick"
@@ -65,7 +65,7 @@
             android:layout_toRightOf="@+id/btn_joy_leftkick"
             android:paddingLeft="6dip"
             android:paddingRight="6dip"
-            android:text="Left Back Kick" />
+            android:text="@string/joystick_left_back_kick" />
 
         <Button
             android:id="@+id/btn_joy_sit"
@@ -74,7 +74,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="13dp"
             android:layout_toRightOf="@+id/btn_joy_leftbackkick"
-            android:text="Sit" />
+            android:text="@string/joystick_sit" />
 
         <Button
             android:id="@+id/btn_joy_stand"
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/btn_joy_sit"
-            android:text="Stand" />
+            android:text="@string/joystick_stand" />
 
     </RelativeLayout>
 

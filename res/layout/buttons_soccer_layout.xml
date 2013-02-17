@@ -11,15 +11,6 @@
         android:layout_width="358dp"
         android:layout_height="563dp" >
 
-        <Button
-            android:id="@+id/btn_btnsoccer_getupfaceup"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:text="GetUp FaceUp" />
-
         <TextView
             android:id="@+id/textViewKick"
             android:layout_width="wrap_content"
@@ -27,7 +18,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/btn_btnsoccer_getupfaceup"
             android:layout_marginTop="12dp"
-            android:text="Kicks"
+            android:text="@string/buttons_soccer_kicks"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
@@ -36,10 +27,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignRight="@+id/btn_btnsoccer_forwardright"
             android:layout_below="@+id/textViewKick"
             android:layout_marginTop="13dp"
-            android:text="Forward Left" />
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:text="@string/buttons_soccer_forward_left" />
 
         <Button
             android:id="@+id/btn_btnsoccer_backleft"
@@ -50,7 +42,7 @@
             android:layout_alignBottom="@+id/btn_btnsoccer_sideleft"
             android:layout_alignLeft="@+id/btn_btnsoccer_backright"
             android:layout_alignParentRight="true"
-            android:text="Back Left" />
+            android:text="@string/buttons_soccer_back_left" />
 
         <Button
             android:id="@+id/btn_btnsoccer_sideleft"
@@ -60,7 +52,10 @@
             android:layout_alignBaseline="@+id/btn_btnsoccer_forwardleft"
             android:layout_alignBottom="@+id/btn_btnsoccer_forwardleft"
             android:layout_toLeftOf="@+id/btn_btnsoccer_getupfacedown"
-            android:text=" Side Left " />
+            android:layout_toRightOf="@+id/btn_btnsoccer_getupfaceup"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:text="@string/buttons_soccer_side_left" />
 
         <Button
             android:id="@+id/btn_btnsoccer_forwardright"
@@ -68,8 +63,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/btn_btnsoccer_forwardleft"
             android:layout_below="@+id/btn_btnsoccer_forwardleft"
-            android:text="Forward Right" />
+            android:text="@string/buttons_soccer_forward_right" />
 
         <Button
             android:id="@+id/btn_btnsoccer_sideright"
@@ -78,7 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/btn_btnsoccer_sideleft"
             android:layout_alignTop="@+id/btn_btnsoccer_forwardright"
-            android:text="Side Right" />
+            android:layout_toLeftOf="@+id/btn_btnsoccer_getupfacedown"
+            android:text="@string/buttons_soccer_side_right" />
 
         <Button
             android:id="@+id/btn_btnsoccer_backright"
@@ -87,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/btn_btnsoccer_backleft"
-            android:text="Back Right" />
+            android:text="@string/buttons_soccer_back_right" />
 
         <Button
             android:id="@+id/btn_btnsoccer_saveleft"
@@ -97,7 +94,7 @@
             android:layout_below="@+id/textViewSaves"
             android:layout_marginTop="14dp"
             android:layout_toRightOf="@+id/textViewSaves"
-            android:text=" Save Left " />
+            android:text="@string/buttons_soccer_save_left" />
 
         <Button
             android:id="@+id/btn_btnsoccer_saveright"
@@ -108,7 +105,7 @@
             android:layout_alignBottom="@+id/btn_btnsoccer_saveleft"
             android:layout_alignParentRight="true"
             android:layout_marginRight="56dp"
-            android:text="Save Right" />
+            android:text="@string/buttons_soccer_save_right" />
 
         <TextView
             android:id="@+id/textView3"
@@ -117,7 +114,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/btn_btnsoccer_saveleft"
             android:layout_marginTop="19dp"
-            android:text="RAgent"
+            android:text="@string/buttons_soccer_ragent"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
@@ -126,18 +123,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/btn_btnsoccer_forwardright"
             android:layout_below="@+id/textView3"
             android:layout_marginTop="11dp"
-            android:text="Find Ball" />
+            android:text="@string/buttons_soccer_find_ball" />
 
         <Button
             android:id="@+id/btn_btnsoccer_attack"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_btnsoccer_backright"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/btn_btnsoccer_gotoball"
-            android:text="  Attack  " />
+            android:text="@string/buttons_soccer_attack" />
 
         <Button
             android:id="@+id/btn_btnsoccer_gotoball"
@@ -146,9 +145,9 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/btn_btnsoccer_findball"
             android:layout_alignBottom="@+id/btn_btnsoccer_findball"
-            android:layout_alignLeft="@+id/btn_btnsoccer_penalized"
+            android:layout_alignLeft="@+id/btn_btnsoccer_sideright"
             android:layout_alignRight="@+id/btn_btnsoccer_sideright"
-            android:text="GoTo Ball" />
+            android:text="@string/buttons_soccer_goto_ball" />
 
         <TextView
             android:id="@+id/textViewSaves"
@@ -157,7 +156,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/btn_btnsoccer_forwardright"
             android:layout_marginTop="15dp"
-            android:text="Saves"
+            android:text="@string/buttons_soccer_saves"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
@@ -167,8 +166,9 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/btn_btnsoccer_defend"
             android:layout_alignBottom="@+id/btn_btnsoccer_defend"
+            android:layout_alignLeft="@+id/btn_btnsoccer_gotoball"
             android:layout_alignRight="@+id/btn_btnsoccer_sideright"
-            android:text=" Penalized " />
+            android:text="@string/buttons_soccer_penalized" />
 
         <Button
             android:id="@+id/btn_btnsoccer_initial"
@@ -178,7 +178,7 @@
             android:layout_alignLeft="@+id/btn_btnsoccer_attack"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/btn_btnsoccer_penalized"
-            android:text="Initial" />
+            android:text="@string/buttons_soccer_initial" />
 
         <Button
             android:id="@+id/btn_btnsoccer_defend"
@@ -188,7 +188,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignRight="@+id/btn_btnsoccer_findball"
             android:layout_below="@+id/btn_btnsoccer_findball"
-            android:text="Defend" />
+            android:text="@string/buttons_soccer_defend" />
 
         <Button
             android:id="@+id/btn_btnsoccer_getupfacedown"
@@ -196,9 +196,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/textViewKick"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
             android:layout_alignParentRight="true"
-            android:text="GetUp FaceDown" />
+            android:text="@string/buttons_soccer_getup_facedown" />
 
+        <Button
+            android:id="@+id/btn_btnsoccer_getupfaceup"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:text="@string/buttons_soccer_getup_faceup" />
     </RelativeLayout>
 
 </LinearLayout>

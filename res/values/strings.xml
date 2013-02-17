@@ -71,15 +71,83 @@
     <!--    Buttons app/menu strings    -->
     <!-- ============================== -->
     
-    <string name="buttons_menu_disconnect">Disconnect</string>
+    <!--    Buttons Movements strings    -->
+    <string name="buttons_movements_turn_left">Turn Left</string>
+    <string name="buttons_movements_left">Left</string>
+    <string name="buttons_movements_sit">Sit Down</string>
+    <string name="buttons_movements_forward">Forward</string>
+    <string name="buttons_movements_backward">Backward</string>
+    <string name="buttons_movements_stop_walk">Stop Walk</string>
+    <string name="buttons_movements_turn_right">Turn Right</string>
+    <string name="buttons_movements_right">Right</string>
+    <string name="buttons_movements_stand">Stand</string>
+    <string name="buttons_movements_getup_faceup">GetUp FaceUp</string>
+    <string name="buttons_movements_getup_facedown">GetUp FaceDown</string>
     
+    <!--    Buttons Soccer strings    -->
+    <string name="buttons_soccer_getup_faceup">GetUp FaceUp</string>
+    <string name="buttons_soccer_getup_facedown">GetUp FaceDown</string>
+    <string name="buttons_soccer_kicks">Kicks</string>
+    <string name="buttons_soccer_forward_left">Forward Left</string>
+    <string name="buttons_soccer_side_left"> Side Left </string>
+    <string name="buttons_soccer_back_left">Back Left</string>
+    <string name="buttons_soccer_forward_right">Forward Right</string>
+    <string name="buttons_soccer_side_right">Side Right</string>
+    <string name="buttons_soccer_back_right">Back Right</string>
+    <string name="buttons_soccer_saves">Saves</string>
+    <string name="buttons_soccer_save_left">Save Left</string>
+    <string name="buttons_soccer_save_right">Save Right</string>
+    <string name="buttons_soccer_ragent">RAgent</string>
+    <string name="buttons_soccer_find_ball">Find Ball</string>
+    <string name="buttons_soccer_goto_ball">Goto Ball</string>
+    <string name="buttons_soccer_attack">Attack</string>
+    <string name="buttons_soccer_defend">Defend</string>
+    <string name="buttons_soccer_penalized">Penalized</string>
+    <string name="buttons_soccer_initial">Initial</string>
+    
+    
+    <!--    Buttons Body Control strings    -->
+    <string name="buttons_body_control_head_control">Head Control</string>
+	<string name="buttons_body_control_left">Left</string>
+	<string name="buttons_body_control_center">Center</string>
+	<string name="buttons_body_control_right">Right</string>
+	<string name="buttons_body_control_up">UP</string>
+	<string name="buttons_body_control_down">DOWN</string>
+	<string name="buttons_body_control_hands_control">Hands Control</string>
+	<string name="buttons_body_control_left_up">Left Up</string>
+	<string name="buttons_body_control_left_down">Left Down</string>
+	<string name="buttons_body_control_right_up">Right Up</string>
+	<string name="buttons_body_control_right_down">Right Down</string>
+	<string name="buttons_body_control_hands_up">Hands Up</string>
+	<string name="buttons_body_control_hands_down">Hands Down</string>
+    
+    <!--    Buttons Behavior strings    -->
+    <string name="buttons_behavior_special_action">Special Actions</string>
+    <string name="buttons_behavior_presentation">Presentation</string>
+    <string name="buttons_behavior_hello">Hello</string>
+    <string name="buttons_behavior_eyes_anim">Eyes Anim.</string>
+    <string name="buttons_behavior_follow_me">Follow Me</string>
+    <string name="buttons_behavior_go_and_rest">Go and Rest</string>
+    <string name="buttons_behavior_storys">Storys</string>
+    <string name="buttons_behavior_3_musketeers">The 3 Musketeers</string>
+    <string name="buttons_behavior_star_wars">Star Wars Story</string>
+    <string name="buttons_behavior_dances">Dances</string>
+    <string name="buttons_behavior_caravan">Caravan</string>
+    <string name="buttons_behavior_taichi">Taichi</string>
+    <string name="buttons_behavior_thriller">Thriller</string>
+    <string name="buttons_behavior_vangelis">Vangelis</string>
+    <string name="buttons_behavior_stop_behavior">Stop Behavior</string>
     
     <!-- ============================== -->
     <!--   JoyStick app/menu strings    -->
     <!-- ============================== -->
     
-    <string name="joystick_menu_disconnect">Disconnect</string>
-    
+    <string name="joystick_left_kick">Left Kick</string>
+    <string name="joystick_left_back_kick">Left Back Kick</string>
+    <string name="joystick_sit">Sit</string>
+    <string name="joystick_stand">Stand</string>
+    <string name="joystick_right_back_kick">Right Back Kick</string>
+    <string name="joystick_right_kick">Right Kick</string>
     
     <!-- ============================== -->
     <!-- Accelerometer app/menu string  -->

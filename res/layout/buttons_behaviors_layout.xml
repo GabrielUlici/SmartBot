@@ -15,7 +15,7 @@
             android:id="@+id/textViewSpecialAction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Special Actions"
+            android:text="@string/buttons_behavior_special_action"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
@@ -26,7 +26,7 @@
             android:layout_alignBaseline="@+id/btn_btnbeha_3musketeers"
             android:layout_alignBottom="@+id/btn_btnbeha_3musketeers"
             android:layout_toRightOf="@+id/btn_btnbeha_hello"
-            android:text="Star Wars Story" />
+            android:text="@string/buttons_behavior_star_wars" />
 
         <Button
             android:id="@+id/btn_btnbeha_vangelis"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/btn_btnbeha_thriller"
-            android:text="Vangelis" />
+            android:text="@string/buttons_behavior_vangelis" />
 
         <Button
             android:id="@+id/btn_btnbeha_taichi"
@@ -45,7 +45,7 @@
             android:layout_alignBaseline="@+id/btn_btnbeha_caravan"
             android:layout_alignBottom="@+id/btn_btnbeha_caravan"
             android:layout_alignRight="@+id/btn_btnbeha_3musketeers"
-            android:text="Taichi" />
+            android:text="@string/buttons_behavior_taichi" />
 
         <Button
             android:id="@+id/btn_btnbeha_thriller"
@@ -56,7 +56,7 @@
             android:layout_alignBottom="@+id/btn_btnbeha_taichi"
             android:layout_marginRight="21dp"
             android:layout_toLeftOf="@+id/btn_btnbeha_vangelis"
-            android:text="Thriller" />
+            android:text="@string/buttons_behavior_thriller" />
 
         <Button
             android:id="@+id/btn_btnbeha_eyesanim"
@@ -66,7 +66,7 @@
             android:layout_alignBaseline="@+id/btn_btnbeha_hello"
             android:layout_alignBottom="@+id/btn_btnbeha_hello"
             android:layout_alignParentRight="true"
-            android:text="Eyes Anim." />
+            android:text="@string/buttons_behavior_eyes_anim" />
 
         <Button
             android:id="@+id/btn_btnbeha_goandrest"
@@ -76,7 +76,7 @@
             android:layout_alignBaseline="@+id/btn_btnbeha_followme"
             android:layout_alignBottom="@+id/btn_btnbeha_followme"
             android:layout_toRightOf="@+id/btn_btnbeha_hello"
-            android:text="Go and Rest" />
+            android:text="@string/buttons_behavior_go_and_rest" />
 
         <Button
             android:id="@+id/btn_btnbeha_caravan"
@@ -86,7 +86,7 @@
             android:layout_alignLeft="@+id/textViewDances"
             android:layout_below="@+id/textViewDances"
             android:layout_marginTop="16dp"
-            android:text="Caravan" />
+            android:text="@string/buttons_behavior_caravan" />
 
         <Button
             android:id="@+id/btn_btnbeha_followme"
@@ -96,7 +96,7 @@
             android:layout_below="@+id/btn_btnbeha_presentation"
             android:layout_marginTop="12dp"
             android:layout_toLeftOf="@+id/btn_btnbeha_hello"
-            android:text="Follow Me" />
+            android:text="@string/buttons_behavior_follow_me" />
 
         <Button
             android:id="@+id/btn_btnbeha_3musketeers"
@@ -107,7 +107,7 @@
             android:layout_below="@+id/textViewStorys"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="16dp"
-            android:text="The 3 musketeers" />
+            android:text="@string/buttons_behavior_3_musketeers" />
 
         <TextView
             android:id="@+id/textViewDances"
@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/btn_btnbeha_3musketeers"
             android:layout_marginTop="18dp"
-            android:text="Dances"
+            android:text="@string/buttons_behavior_dances"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
@@ -125,7 +125,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/btn_btnbeha_followme"
             android:layout_marginTop="13dp"
-            android:text="Storys"
+            android:text="@string/buttons_behavior_storys"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
@@ -136,7 +136,7 @@
             android:layout_below="@+id/btn_btnbeha_taichi"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="42dp"
-            android:text="Stop Behavior" />
+            android:text="@string/buttons_behavior_stop_behavior" />
 
         <Button
             android:id="@+id/btn_btnbeha_presentation"
@@ -145,7 +145,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/textViewSpecialAction"
-            android:text="Presentation" />
+            android:text="@string/buttons_behavior_presentation" />
 
         <Button
             android:id="@+id/btn_btnbeha_hello"
@@ -154,7 +154,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/btn_btnbeha_followme"
             android:layout_centerHorizontal="true"
-            android:text="  Hello  " />
+            android:text="@string/buttons_behavior_hello" />
 
     </RelativeLayout>
 

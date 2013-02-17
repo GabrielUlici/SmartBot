@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:text="Head Control"
+            android:text="@string/buttons_body_control_head_control"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
@@ -28,7 +28,7 @@
             android:layout_alignBaseline="@+id/btn_btnbody_left"
             android:layout_alignBottom="@+id/btn_btnbody_left"
             android:layout_centerHorizontal="true"
-            android:text="Center" />
+            android:text="@string/buttons_body_control_center" />
 
         <Button
             android:id="@+id/btn_btnbody_right"
@@ -38,7 +38,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/btn_btnbody_center"
             android:layout_toRightOf="@+id/btn_btnbody_down"
-            android:text="Right" />
+            android:text="@string/buttons_body_control_right" />
 
         <Button
             android:id="@+id/btn_btnbody_down"
@@ -48,7 +48,7 @@
             android:layout_alignBaseline="@+id/btn_btnbody_up"
             android:layout_alignBottom="@+id/btn_btnbody_up"
             android:layout_toRightOf="@+id/btn_btnbody_center"
-            android:text="  DOWN  " />
+            android:text="@string/buttons_body_control_down" />
 
         <Button
             android:id="@+id/btn_btnbody_left"
@@ -59,7 +59,7 @@
             android:layout_below="@+id/textViewHeadControl"
             android:layout_marginTop="11dp"
             android:layout_toLeftOf="@+id/btn_btnbody_up"
-            android:text="Left" />
+            android:text="@string/buttons_body_control_left" />
 
         <Button
             android:id="@+id/btn_btnbody_up"
@@ -69,7 +69,8 @@
             android:layout_below="@+id/btn_btnbody_center"
             android:layout_marginTop="11dp"
             android:layout_toLeftOf="@+id/btn_btnbody_center"
-            android:text="      UP      " />
+            android:layout_toRightOf="@+id/btn_btnbody_leftup"
+            android:text="@string/buttons_body_control_up" />
 
         <TextView
             android:id="@+id/textViewHandsControl"
@@ -78,7 +79,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/btn_btnbody_up"
             android:layout_marginTop="16dp"
-            android:text="Hands Control"
+            android:text="@string/buttons_body_control_hands_control"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
@@ -89,7 +90,7 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/textViewHandsControl"
             android:layout_marginTop="12dp"
-            android:text="Left Up" />
+            android:text="@string/buttons_body_control_left_up" />
 
         <Button
             android:id="@+id/btn_btnbody_rightdown"
@@ -98,7 +99,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/btn_btnbody_rightup"
-            android:text="Right Down" />
+            android:text="@string/buttons_body_control_right_down" />
 
         <Button
             android:id="@+id/btn_btnbody_rightup"
@@ -108,7 +109,7 @@
             android:layout_alignBaseline="@+id/btn_btnbody_leftdown"
             android:layout_alignBottom="@+id/btn_btnbody_leftdown"
             android:layout_toLeftOf="@+id/btn_btnbody_rightdown"
-            android:text="Right Up" />
+            android:text="@string/buttons_body_control_right_up" />
 
         <Button
             android:id="@+id/btn_btnbody_leftdown"
@@ -118,7 +119,7 @@
             android:layout_alignBaseline="@+id/btn_btnbody_leftup"
             android:layout_alignBottom="@+id/btn_btnbody_leftup"
             android:layout_toRightOf="@+id/btn_btnbody_leftup"
-            android:text="Left Down" />
+            android:text="@string/buttons_body_control_left_down" />
 
         <Button
             android:id="@+id/btn_btnbody_handsdown"
@@ -128,7 +129,7 @@
             android:layout_alignBaseline="@+id/btn_btnbody_handsup"
             android:layout_alignBottom="@+id/btn_btnbody_handsup"
             android:layout_alignLeft="@+id/btn_btnbody_rightup"
-            android:text="Hands Down" />
+            android:text="@string/buttons_body_control_hands_down" />
 
         <Button
             android:id="@+id/btn_btnbody_handsup"
@@ -137,7 +138,7 @@
             android:layout_height="wrap_content"
             android:layout_alignRight="@+id/btn_btnbody_leftdown"
             android:layout_centerVertical="true"
-            android:text="  Hands Up  " />
+            android:text="@string/buttons_body_control_hands_up" />
 
     </RelativeLayout>
 
